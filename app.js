@@ -8,6 +8,11 @@ const io = require('socket.io')(server)
 
 app.use(express.static(path.join(__dirname, 'public')))
 
+app.get("/login", (req, res) => {
+  console.log("inside request");
+  res.sendFile(`${__dirname}/public/login.html`);
+});
+
 let socketsConected = new Set()
 
 io.on('connection', onConnected)

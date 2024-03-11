@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8" />
+            <link rel="stylesheet" type="text/css" href="/styles/login.css">
+        </head>
+        <body>
+<div className="login-page">
+    <div className="card">
+      <form onSubmit={onLogin}>
+        <div className="title">Login</div>
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+        />
+        <button type="submit">LOG IN</button>
+      </form>
+
+      <!-- Signup form -->
+      <form onSubmit={onSignUp}>
+        <div className="title">or Sign Up</div>
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+        />
+        <input
+          type="password"
+          name="passwordConfirm"
+          placeholder="Password"
+        />
+        <button type="submit">SIGN UP</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
